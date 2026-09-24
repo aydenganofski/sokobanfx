@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.CustomMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="paneMP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ihm.sokoban.view.MenuPrincipalController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+            <Menu mnemonicParsing="false" text="Son">
+               <items>
+                  <CustomMenuItem hideOnClick="false" mnemonicParsing="false">
+                     <content>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                           <children>
+                              <Label styleClass="items" text="Volume :" />
+                              <Slider fx:id="sliderVolume" max="1.0" value="0.5" />
+                           </children>
+                        </HBox>
+                     </content>
+                  </CustomMenuItem>
+                  
+                  <CheckMenuItem fx:id="checkMusique" mnemonicParsing="false" text="Couper la musique" />
+                  <CheckMenuItem fx:id="checkBruitages" mnemonicParsing="false" text="Couper les bruitages" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Thème">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#actionThemeClair" text="Clair" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionThemeSombre" text="Sombre" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionThemeRose" text="Rose" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionThemeBleu" text="Bleu" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionThemeMaruigi" text="Maruigi" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Quitter">
+               <items>
+                  <MenuItem fx:id="MIQuitter" mnemonicParsing="false" onAction="#quitter" text="Quitter" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="349.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="titre" alignment="TOP_CENTER" contentDisplay="CENTER" text="SokobanApp">
+               <font>
+                  <Font name="System Bold" size="72.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <MenuButton fx:id="menuCommencer" mnemonicParsing="false" styleClass="bouton-menu" text="Commencer">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#actionLancerTutoriel" styleClass="items" text="Tutoriel" />
+                <MenuItem mnemonicParsing="false" onAction="#actionLancerSokoban" styleClass="items" text="Niveaux Sokoban" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionLancerDossier" styleClass="items" text="Charger un niveau" />
+              </items>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </MenuButton>
+            <Button mnemonicParsing="false" onAction="#aide" styleClass="bouton-menu" text="Comment jouer ?">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#credit" styleClass="bouton-menu" text="Crédits">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

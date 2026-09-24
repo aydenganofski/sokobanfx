@@ -1,0 +1,209 @@
+/* ==== CONFIGURATION GENERALE ==== */
+#titre {
+    -fx-text-fill:#000;
+    -fx-effect:dropshadow(gaussian,#fff,5,0,0,2);
+}
+
+.button,
+.button:hover,
+.button:pressed {
+    -fx-min-width: 100px;
+    -fx-padding: 8px 15px;        
+    -fx-font-size: 14px;          
+    -fx-cursor: hand;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: transparent;
+    -fx-background-insets: 0;     
+}
+
+#menuCommencer,
+#menuCommencer:hover,
+#menuCommencer:pressed {
+    -fx-min-width: 100px;
+    -fx-padding: 8px 15px;        
+    -fx-font-size: 24px;          
+    -fx-cursor: hand;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: transparent;
+    -fx-background-insets: 0;     
+}
+
+.items .label {
+    -fx-font-size: 14px;
+}
+/* ===== THEME CLAIR ===== */
+
+.themeClair {
+    -fx-background-color:#f4f4f4;
+}
+
+.themeClair .label {
+    -fx-text-fill:#333;
+}
+
+.themeClair .button,
+.themeClair #menuCommencer {
+    -fx-background-color:#e0e0e0;
+    -fx-text-fill:#000;
+}
+
+.themeClair .button:hover,
+.themeClair #menuCommencer:hover {
+    -fx-background-color: #eeeeee;
+}
+
+.themeClair .button:pressed,
+.themeClair #menuCommencer:pressed {
+    -fx-background-color: #cccccc;
+}
+
+/* ===== THEME SOMBRE ===== */
+.themeSombre #titre {
+    -fx-text-fill:#ffffff;
+    -fx-effect:dropshadow(gaussian,#000000,5,0,0,2);
+}
+.themeSombre {
+    -fx-background-color:#2b2b2b;
+}
+
+.themeSombre .label {
+    -fx-text-fill:#eee;
+}
+
+.themeSombre .button,
+.themeSombre #menuCommencer {
+    -fx-background-color:#444;
+    -fx-text-fill:#fff;
+    -fx-border-color:#555;
+}
+
+.themeSombre .menu-bar {
+    -fx-background-color:#232323;
+}
+
+.themeSombre .context-menu {
+    -fx-background-color:#2b2b2b;
+    -fx-border-color:#555;
+}
+
+.themeSombre .menu-item:focused {
+    -fx-background-color:#444;
+}
+
+.themeSombre .button:hover,
+.themeSombre #menuCommencer:hover {
+    -fx-background-color: #555;
+    -fx-border-color: #777;
+}
+
+.themeSombre .button:pressed,
+.themeSombre #menuCommencer:pressed {
+    -fx-background-color: #222;
+}
+
+/* ===== THEME ROSE ===== */
+
+.themeRose {
+    -fx-background-color:#ffe6f2;
+}
+
+.themeRose .label {
+    -fx-text-fill:#99004d;
+}
+
+.themeRose .button,
+.themeRose #menuCommencer {
+    -fx-background-color:#ffb3d9;
+    -fx-text-fill:#99004d;
+    -fx-border-color:#ff66b3;
+}
+
+.themeRose .button:hover,
+.themeRose #menuCommencer:hover {
+    -fx-background-color: #ffcce6;
+}
+
+.themeRose .button:pressed,
+.themeRose #menuCommencer:pressed {
+    -fx-background-color: #ff99cc;
+}
+/* ===== THEME BLEU ===== */
+
+.themeBleu {
+    -fx-background-color:#e6f2ff;
+}
+
+.themeBleu .label {
+    -fx-text-fill:#003366;
+}
+
+.themeBleu .button,
+.themeBleu #menuCommencer {
+    -fx-background-color:#99ccff;
+    -fx-text-fill:#003366;
+    -fx-border-color:#3399ff;
+}
+
+.themeBleu .button:hover,
+.themeBleu #menuCommencer:hover {
+    -fx-background-color: #b3d9ff;
+}
+
+.themeBleu .button:pressed,
+.themeBleu #menuCommencer:pressed {
+    -fx-background-color: #80bfff;
+}
+
+/* ===== THEME MARUIGI ===== */
+.themeMaruigi {
+    -fx-background-color: #80bfff;
+}
+
+.themeMaruigi #menuCommencer .label {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(one-pass-box, black, 2, 1.0, 0, 0);
+}
+
+.themeMaruigi .button, 
+.themeMaruigi #menuCommencer {
+    -fx-background-color: #43b047, #e52521;
+    -fx-background-insets: 0, 3;
+    -fx-background-radius: 6, 3;
+    -fx-text-fill: #fff;
+    -fx-font-weight: bold;
+}
+
+.themeMaruigi .button .text,
+.themeMaruigi #menuCommencer .label {
+    -fx-effect: dropshadow(one-pass-box, black, 2, 1.0, 0, 0);
+}
+
+.themeMaruigi .button:hover, 
+.themeMaruigi #menuCommencer:hover {
+    -fx-background-color: #52c756, #f73631; 
+    -fx-background-insets: 0, 3;
+}
+
+
+.themeMaruigi .button:pressed, 
+.themeMaruigi #menuCommencer:pressed {
+    -fx-background-color: #368f3a, #c41e1b; 
+    -fx-background-insets: 0, 3;
+    -fx-translate-y: 2px;
+}
+
+.themeMaruigi .items {
+    -fx-text-fill: #000000;
+    -fx-font-weight: normal;
+}
+
+.themeMaruigi #menuCommencer .menu-item .label {
+    -fx-text-fill: #000000;
+    -fx-font-weight: normal;
+    -fx-effect: null; 
+}
